@@ -1,12 +1,10 @@
 const Vue = require('vue')
 // eslint-disable-next-line import/no-unresolved
-const VueTemplateCompiler = require('vue-template-compiler')
+const { compileTemplate, compileScript } = require('@vue/compiler-sfc')
 
-module.exports.h = () => {}
-module.exports.createApp = () => {}
-module.exports.isVue3 = false
-module.exports.Vue2 = Vue
-module.exports.compileTemplate = ({ source: template }) => ({
-	code: VueTemplateCompiler.compile(template).render
-})
-module.exports.compileScript = () => ({ type: 'script' })
+module.exports.h = Vue.h
+module.exports.createApp = Vue.createApp
+module.exports.isVue3 = true
+module.exports.Vue2 = function () {}
+module.exports.compileTemplate = compileTemplate
+module.exports.compileScript = compileScript

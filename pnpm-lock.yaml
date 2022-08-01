@@ -1,9 +1,9 @@
 lockfileVersion: 5.4
 
 patchedDependencies:
-  vue@2.7.8:
-    hash: 26fyyf7iv7yfd4w3hhy5cm2p24
-    path: patches/vue@2.7.8.patch
+  '@vue/runtime-dom@3.2.37':
+    hash: n4tujqdgwzrbix62utnmtsphue
+    path: patches/@vue__runtime-dom@3.2.37.patch
 
 importers:
 
@@ -242,7 +242,7 @@ importers:
       sass-loader: 8.0.2_sass@1.34.0+webpack@4.46.0
       style-loader: 0.19.1
       url-loader: 1.1.2_webpack@4.46.0
-      vue: 2.7.8_26fyyf7iv7yfd4w3hhy5cm2p24
+      vue: 2.7.8
       vue-docgen-cli: link:../../packages/vue-docgen-cli
       vue-loader: 17.0.0_webpack@4.46.0
       vue-styleguidist: link:../../packages/vue-styleguidist
@@ -500,7 +500,7 @@ importers:
       '@nuxt/vue-app': 2.15.3
       '@nuxtjs/axios': 5.13.1
       nuxt: 2.15.3
-      vue: 2.7.8_26fyyf7iv7yfd4w3hhy5cm2p24
+      vue: 2.7.8
       vuex: 3.6.2_vue@2.7.8
     devDependencies:
       '@babel/core': 7.18.6
@@ -6888,7 +6888,7 @@ packages:
       node-fetch: 2.6.1
       ufo: 0.6.10
       unfetch: 4.2.0
-      vue: 2.7.8_26fyyf7iv7yfd4w3hhy5cm2p24
+      vue: 2.7.8
       vue-client-only: 2.0.0
       vue-meta: 2.4.0
       vue-no-ssr: 1.1.1
@@ -6907,7 +6907,7 @@ packages:
       lodash: 4.17.21
       lru-cache: 5.1.1
       ufo: 0.6.10
-      vue: 2.7.8_26fyyf7iv7yfd4w3hhy5cm2p24
+      vue: 2.7.8
       vue-meta: 2.4.0
       vue-server-renderer: 2.7.8
     dev: false
@@ -8158,7 +8158,7 @@ packages:
       core-js: 3.20.3
       core-js-compat: 3.20.3
       semver: 6.3.0
-      vue: 2.7.8_26fyyf7iv7yfd4w3hhy5cm2p24
+      vue: 2.7.8
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -9186,7 +9186,7 @@ packages:
       slash: 3.0.0
       strip-ansi: 6.0.1
       validate-npm-package-name: 3.0.0
-      vue: 2.7.8_26fyyf7iv7yfd4w3hhy5cm2p24
+      vue: 2.7.8
       vue-codemod: 0.0.5
       yaml-front-matter: 4.1.1
     transitivePeerDependencies:
@@ -9767,12 +9767,13 @@ packages:
       '@vue/reactivity': 3.2.37
       '@vue/shared': 3.2.37
 
-  /@vue/runtime-dom/3.2.37:
+  /@vue/runtime-dom/3.2.37_n4tujqdgwzrbix62utnmtsphue:
     resolution: {integrity: sha512-HimKdh9BepShW6YozwRKAYjYQWg9mQn63RGEiSswMbW+ssIht1MILYlVGkAGGQbkhSh31PCdoUcfiu4apXJoPw==}
     dependencies:
       '@vue/runtime-core': 3.2.37
       '@vue/shared': 3.2.37
       csstype: 2.6.20
+    patched: true
 
   /@vue/server-renderer/3.2.37_vue@3.2.37:
     resolution: {integrity: sha512-kLITEJvaYgZQ2h47hIzPh2K3jG8c1zCVbp/o/bzQOyvzaKiCquKS7AaioPI28GNxIsE/zSx+EwWYsNxDCX95MA==}
@@ -9855,7 +9856,7 @@ packages:
       postcss-safe-parser: 4.0.2
       toml: 3.0.0
       url-loader: 1.1.2_webpack@4.46.0
-      vue: 2.7.8_26fyyf7iv7yfd4w3hhy5cm2p24
+      vue: 2.7.8
       vue-loader: 15.9.8_u4hfbv7s4y6bi76axomo4z3mcu
       vue-router: 3.5.1
       vue-server-renderer: 2.6.14
@@ -9963,7 +9964,7 @@ packages:
       postcss-safe-parser: 4.0.2
       toml: 3.0.0
       url-loader: 1.1.2_webpack@4.46.0
-      vue: 2.7.8_26fyyf7iv7yfd4w3hhy5cm2p24
+      vue: 2.7.8
       vue-loader: 15.9.8_pf2nacutanypibfndeigfabsry
       vue-router: 3.5.1
       vue-server-renderer: 2.6.14
@@ -10442,7 +10443,7 @@ packages:
   /@znck/prop-types/0.6.3:
     resolution: {integrity: sha512-r4Zc8DMl4fvb7PSmY9GLUwZuIBMGUwmYxx8KrpAQXuUvGgORUyKzO7MhUGnnJoI1FIFrRgu1oGOp8IvxdmSFAw==}
     dependencies:
-      vue: 2.7.8_26fyyf7iv7yfd4w3hhy5cm2p24
+      vue: 2.7.8
     dev: false
 
   /abbrev/1.1.1:
@@ -28710,19 +28711,18 @@ packages:
       vue: 3.2.37
     dev: false
 
-  /vue/2.7.8_26fyyf7iv7yfd4w3hhy5cm2p24:
+  /vue/2.7.8:
     resolution: {integrity: sha512-ncwlZx5qOcn754bCu5/tS/IWPhXHopfit79cx+uIlLMyt3vCMGcXai5yCG5y+I6cDmEj4ukRYyZail9FTQh7lQ==}
     dependencies:
       '@vue/compiler-sfc': 2.7.8
       csstype: 3.1.0
-    patched: true
 
   /vue/3.2.37:
     resolution: {integrity: sha512-bOKEZxrm8Eh+fveCqS1/NkG/n6aMidsI6hahas7pa0w/l7jkbssJVsRhVDs07IdDq7h9KHswZOgItnwJAgtVtQ==}
     dependencies:
       '@vue/compiler-dom': 3.2.37
       '@vue/compiler-sfc': 3.2.37
-      '@vue/runtime-dom': 3.2.37
+      '@vue/runtime-dom': 3.2.37_n4tujqdgwzrbix62utnmtsphue
       '@vue/server-renderer': 3.2.37_vue@3.2.37
       '@vue/shared': 3.2.37
 
@@ -28954,7 +28954,7 @@ packages:
     peerDependencies:
       vue: ^2.0.0
     dependencies:
-      vue: 2.7.8_26fyyf7iv7yfd4w3hhy5cm2p24
+      vue: 2.7.8
 
   /vuex/3.6.2_vue@3.2.37:
     resolution: {integrity: sha512-ETW44IqCgBpVomy520DT5jf8n0zoCac+sxWnn+hMe/CzaSejb/eVw2YToiXYX+Ex/AuHHia28vWTq4goAexFbw==}
